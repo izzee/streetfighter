@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   get '/login' => 'sessions#new'
   post '/login' => 'sessions#create'
   post '/logout' => 'sessions#destroy'
-  get  '/🥊/:id' => 'games#round1'
+  get  '/games/:id' => 'games#round1'
 
   resources :users
   resources :games
